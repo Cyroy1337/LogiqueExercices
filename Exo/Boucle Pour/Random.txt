@@ -1,0 +1,53 @@
+Debut Random
+Declaration Variable locale
+Var a : N <- 0
+Var saisie : N <- 0
+Var cpt : N <- 0
+Var replay : N <- 1
+Var Score : N <- 0
+Var scoreB : N <- 0
+Var echec : N <- 0
+Fin Declaration Variable locale
+
+Repeter
+
+  a <- aléatoire (101)  
+    afficher " Veuillez entré une valeur entre 0 et 101 bornes non-incluse"
+    Saisir saisie
+    cpt = 1
+        
+        Tant que a =/ saisie & cpt < 10 
+            
+                Si saisie < a 
+                alors afficher "Le nombre mystere est plus grand que ca essayé encore"
+                Sinon
+                alors afficher "Le nombre mystere est plus petit que ca essayé encore"
+                Fin de si
+            
+            afficher " Vous avez encore" 10-cpt " essai"
+            afficher " Veuillez entré une valeur entre 0 et 101 bornes non-incluse"
+            Saisir saisie
+            cpt = cpt + 1
+        
+        Fin de tant que
+        
+        Si saisie = a
+            Afficher "Bravo vous avez trouvé avec "10-cpt" essaie restants"
+            Score = Score + (10 - Cpt)
+            scoreB = ScoreB + 1 
+        Sinon
+            Afficher "Dommage vous avez utilisé tout vos essai"
+            echec = echec + 1
+            Score = Score - 10
+        Fin de si
+
+ Afficher "Vous avez trouvé" scorbB "Nombre mystere et vous avez echoué" echec " fois a le trouve"
+ Afficher "Votre score est de" Score
+ Afficher "Voulez vous rejouer ? 0 pour arreter"
+Saisir replay
+
+Jusqu'a ce que replay = 0  
+fin de jusqu'a
+Fin  Random
+
+
