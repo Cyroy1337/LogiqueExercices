@@ -1,0 +1,14 @@
+Declaration Variable locale
+Var cpt : N <- 0
+Var dix : N <- 0
+Var cent : N <- 0
+
+fin declaration Variable
+
+Pour cpt de 1 a 9
+        afficher "00" cpt
+Pour cpt de 10 a 99
+        afficher "0" cpt
+Pour Cpt de 100 a 999
+        afficher cpt
+     

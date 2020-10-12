@@ -1,0 +1,23 @@
+Debut Moyenne dans un intervalle 
+ Declaration des Variables Local
+    Var Saisie : N <- 0
+    Var Cpt : N <- 0
+    Var Result : N <- 0
+    Var Moy : N <- 0
+ Fin Declaration des Variables Local
+
+Pour cpt Allant de 1 a 30
+    Afficher " Entrer une Valeur"
+    Saisir : Saisie 
+
+        Si Saisie <= 20 et Saisie >= 10
+          Alors Moy = Moy + 1
+          Result = Result + Saisie
+        Fin de Si
+   
+    Cpt SUIVANT
+Si Moy =/ 0
+ Afficher " Voici la moyenne des nombres compris entre 10 et 20 bornes incluses :"Result / Moy
+Sinon
+ Afficher " blablabla"
+Fin Moyenne dans un interval

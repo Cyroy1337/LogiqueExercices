@@ -1,0 +1,30 @@
+Debut Somme Suite de Nombre
+    Declaration des Variables Local
+        Var Saisie : N <- 0
+        Var Cpt : N <- 0
+        Var Saisie2 : N <- 0
+        Var Base : N <- 0
+        Var Somme : N <-0
+    
+    Fin Declaration des Variables Local
+
+Afficher " Entrer une Valeur"
+Saisir : Saisie
+Afficher " Entrer 2eme Valeur"
+Saisir : Saisie2
+
+Si Saisie > Saisie2
+    Alors 
+        Base = Saisie   Saisie = Saisie2    Saisie2 = Base
+Fin Si 
+
+    Si Saisie /= Saisie 2
+        Alors
+        Pour cpt Allant de Saisie a Saisie2
+            Somme = Somme + cpt
+        cpt Suivant
+        Afficher "La somme est de" Somme
+    Sinon Afficher la somme est de" Saisie
+    Fin si
+
+Fin Somme Suite de Nombre

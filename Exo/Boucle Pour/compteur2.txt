@@ -1,0 +1,18 @@
+Declaration Variable locale
+Var cpt : N <- 0
+Var dix : N <- 0
+Var cent : N <- 0
+
+fin declaration Variable
+
+Tant que cpt < 100
+        Si cpt < 10
+        afficher "00" cpt
+        sinon 
+        afficher "0" cpt
+    cpt + 1
+    Fin de tant que 
+Pour Cpt de 100 a 999
+    afficher cpt
+     
+Fin de pour
