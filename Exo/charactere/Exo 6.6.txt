@@ -1,0 +1,31 @@
+Exo 6.6
+Declaration variables Local
+
+Var range : N <- 0
+Var textbis : T <- ""
+Var longbis : N <- 0
+Var text : T <- ""
+Var mot : T <- ""
+Var long : N <- 0
+Var ppos : N <- 0
+Var dpos : N <- 0
+Var occu : N <- 0
+Var cpt : N <- 1
+Var end : N <- 0
+Var bool : B <- faux
+
+Fin Declaration des variables
+
+Afficher "Veuillez Entre le texte"
+
+Saisir text
+
+long = longueur(text)
+    
+    Tant que long =/ 0
+        final = final (+) caract(text,long)
+        long = long - 1
+    Fin de tant que
+
+Afficher final
+Fin Exo 6.6
