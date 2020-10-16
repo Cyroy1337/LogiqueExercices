@@ -25,13 +25,13 @@ Tant que cpt <= long
         Si caract(text,long) =/ space  
         Alors
             mot = mot (+) caract(text,cpt)
-                
                 Si long = cpt
                 Alors final = mot (+) final
+                Fin de si
         Sinon
         final = mot (+) space (+) final
  cpt = cpt + 1
  Fin de tant que 
 
  Afficher final
-   
+ Fin Exo 6.7
