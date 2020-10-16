@@ -16,7 +16,7 @@ Saisir char
 long <- longueur(chaine)
 
 Pour cpt de 1 a long
-    Si caract (chaine) cpt = char 
+    Si caract (chaine,cpt)  = char 
         Alors occu = occu + 1
         dpos = cpt
             Si occu = 1
