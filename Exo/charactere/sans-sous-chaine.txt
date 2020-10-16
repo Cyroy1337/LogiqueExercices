@@ -1,0 +1,48 @@
+Debut sans-sous-chaine
+Declaration variables Local
+
+Var range : N <- 0
+Var chaine : T <- ""
+Var text : T <- ""
+Var mot : T <- ""
+Var long : N <- 0
+Var ppos : N <- 0
+Var dpos : N <- 0
+Var occu : N <- 0
+Var cpt : N <- 1
+Var end : N <- 0
+Var final : T <- ""
+Var remp : T <-""
+Var bool : b <- vrai
+
+Fin Declaration des variables
+
+Afficher " Veuillez Saisir Votre texte suivi de la position de debut et de fin"
+Saisir text
+Saisir start
+saisir end
+
+long = longueur(text)
+
+Tant que bool = vrai
+    Si start > 0 et end <= long 
+        Alors 
+        Pour cpt de start a end
+            final = final (+) caract(text,cpt)
+            cpt suivant
+    Sinon
+        Afficher " Position incorrect "
+        bool = faux
+    Fin de si
+    Si bool = vrai
+        Alors 
+        Afficher "Voici le resultat" final    
+    Afficher "voulez vous poursuivre Y pour oui N pour non"
+    Saisir mot
+    
+    Si caract(mot(1)) = Y
+        Alors
+        bool = vrai
+        Fin de si
+Fin de tant que  
+Fin sans-sous-chaine

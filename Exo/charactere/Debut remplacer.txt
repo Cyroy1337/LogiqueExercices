@@ -1,0 +1,39 @@
+Debut remplacer
+Declaration variables Local
+
+Var range : N <- 0
+Var chaine : T <- ""
+Var text : T <- ""
+Var mot : T <- ""
+Var long : N <- 0
+Var ppos : N <- 0
+Var dpos : N <- 0
+Var occu : N <- 0
+Var cpt : N <- 1
+Var end : N <- 0
+Var final : T <- ""
+Var remp : T <-""
+
+Fin Declaration des variables
+
+Afficher " Veuillez Saisir Votre texte suivi du mot a rechercher et de celui de remplacement "
+Saisir text
+Saisir chaine
+saisir mot
+
+long = longueur(text)
+range = longueur(chaine)
+
+Tant que cpt <= long
+    Si sousChaine (text,cpt,(range+cpt)) = chaine
+    Alors
+        final = final (+) mot
+        cpt = cpt + chaine
+    Sinon
+        final = final (+) caract(text,cpt)
+        cpt = cpt + 1
+    Fin de si
+Fin de tant que
+
+Afficher final
+Fin remplacer
