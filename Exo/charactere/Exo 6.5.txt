@@ -1,0 +1,47 @@
+Debut Plus grand
+Declaration variables Local
+
+Var range : N <- 0
+Var textbis : T <- ""
+Var longbis : N <- 0
+Var text : T <- ""
+Var mot : T <- ""
+Var long : N <- 0
+Var ppos : N <- 0
+Var dpos : N <- 0
+Var occu : N <- 0
+Var cpt : N <- 1
+Var end : N <- 0
+Var bool : B <- faux
+
+Fin Declaration des variables
+
+
+Afficher "Veuillez Entre les 2 text a comparé"
+
+Saisir text
+Saisir textbis
+
+long = longueur(text)
+longbis = longueur(textbis)
+
+Si long < longbis
+    alors range = long 
+Sinon 
+    range = longbis
+
+Pour cpt de 1 a range
+    Si caract(text,cpt) /= caract(textbis,cpt)
+        Alors 
+        bool = caract(text,cpt) < caract(textbis,cpt)
+    Fin de si
+cpt Suivant
+
+Afficher Bool
+Fin Plus grand
+
+
+
+  
+    
+
