@@ -14,7 +14,7 @@ Saisir chaine
 Saisir char
 long <- longueur(chaine)
 
-Pour cpt de 0 a long
+Pour cpt de 1 a long
     Si caract (chaine) = char 
         Alors occu = occu + 1
         dpos = cpt
