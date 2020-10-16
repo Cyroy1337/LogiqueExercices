@@ -25,9 +25,9 @@ saisir end
 long = longueur(text)
 
 Tant que bool = vrai
-    Si start > 0 et end <= long 
+    Si start > 0 et end <= long + 1
         Alors 
-        Pour cpt de start a end
+        Pour cpt de start a end - 1
             final = final (+) caract(text,cpt)
             cpt suivant
     Sinon

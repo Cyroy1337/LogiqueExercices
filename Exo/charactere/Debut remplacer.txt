@@ -24,7 +24,7 @@ saisir mot
 long = longueur(text)
 range = longueur(chaine)
 
-Tant que cpt <= long
+Tant que cpt <= long - range + 1
     Si sousChaine (text,cpt,(range+cpt)) = chaine
     Alors
         final = final (+) mot
