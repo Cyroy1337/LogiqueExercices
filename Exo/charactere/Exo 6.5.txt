@@ -29,9 +29,12 @@ Si long < longbis
     alors range = long 
 Sinon 
     range = longbis
-Tant que caract(text,cpt) = caract(textbis,cpt)
-    cpt = cpt + 1
 Fin de si
+
+Tant que caract(text,cpt) = caract(textbis,cpt) & cpt /= range 
+    Si cpt < range
+    cpt = cpt + 1
+Fin de tant que
 bool = caract(text,cpt) < caract(textbis,cpt) & long < longbis
 cpt Suivant
 Afficher Bool
