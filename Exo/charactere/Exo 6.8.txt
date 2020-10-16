@@ -1,0 +1,34 @@
+Exo 6.8
+Declaration variables Local
+
+Var range : N <- 0
+Var textbis : T <- ""
+Var longbis : N <- 0
+Var text : T <- ""
+Var mot : T <- ""
+Var long : N <- 0
+Var ppos : N <- 0
+Var dpos : N <- 0
+Var occu : N <- 0
+Var cpt : N <- 1
+Var end : N <- 0
+Var space : C <- ' '
+Var bool : B <- faux
+
+Fin Declaration des variables
+
+Afficher "Veuillez Entre le texte"
+Saisir text
+long = longueur(text)
+
+Tant que cpt <= long
+        Si caract(text,long) =/ space  
+        Alors
+            mot = caract(text,cpt) (+) mot 
+                Si long = cpt
+                Alors final = final (+) mot
+                Fin de si
+        Sinon
+        final = final (+) mot (+) space
+ cpt = cpt + 1
+ Fin de tant que 
