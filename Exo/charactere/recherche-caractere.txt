@@ -7,6 +7,7 @@ Var long : N <- 0
 Var ppos : N <- 0
 Var dpos : N <- 0
 Var occu : N <- 0
+Var cpt : N <- 0
 Fin Declaration des variables
 
 Afficher " Veuillez entré une chaine de character Suivi d'un seul caractere "
@@ -15,13 +16,13 @@ Saisir char
 long <- longueur(chaine)
 
 Pour cpt de 1 a long
-    Si caract (chaine) = char 
+    Si caract (chaine) cpt = char 
         Alors occu = occu + 1
         dpos = cpt
-    Fin Si
-    Si caract (chaine) = char & occu = 1
-        ppos = cpt
-    Fin Si
+            Si occu = 1
+                ppos = cpt
+            Fin de si
+    Fin de Si
 cpt Suivant
 
 Afficher "La première occurence se trouve en" ppos "place" la derniere occurence en " dpos " le caractere apparait " occu " fois"
