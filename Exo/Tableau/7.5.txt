@@ -1,0 +1,25 @@
+7.5
+Declaration variables local
+CONST Taille : N <- 20
+Var Tab:C[Taille]
+Var ind:N <- 1
+Var saisie:C <- ''
+Var reverse:N <- Taille
+Var pos : N <- 1
+
+Fin variables local
+
+Pour ind de 1 a Taille
+    Saisir saisie
+    Si saisie = ' '
+        Alors 
+        Tab[reverse] = saisie
+        reverse = reverse - 1
+    Sinon
+        Tab[pos] = saisie
+        pos = pos + 1 
+    Tab[ind]
+
+Suivant ind
+
+Fin 7.5

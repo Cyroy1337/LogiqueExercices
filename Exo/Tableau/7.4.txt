@@ -8,7 +8,7 @@ Var max:N <- 0
 Var pmax:N <- 1
 Var pmin:N <- 1
 Var provi:N <- 0
-Var reverse:N <- 10
+Var reverse:N <- Taille
 Fin variables local
 
 Pour ind de 1 a (Taille/2)
