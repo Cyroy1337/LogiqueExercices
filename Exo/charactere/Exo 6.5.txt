@@ -34,6 +34,8 @@ Fin de si
 Tant que caract(text,cpt) = caract(textbis,cpt) & cpt /= range 
     cpt = cpt + 1
 Fin de tant que
+Si 
+
 bool = caract(text,cpt) < caract(textbis,cpt) & long < longbis
 
 Afficher Bool

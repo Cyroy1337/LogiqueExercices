@@ -1,0 +1,32 @@
+Debut Min-max-bonus
+
+Declaration variables local
+CONST Taille : N <- 20
+Var Tab:N[Taille]
+Var ind:N <- 1
+Var min:N <- 0
+Var max:N <- 0
+Var pmax:N <- 1
+Var pmin:N <- 1
+Fin variables local
+
+Afficher "Veuillez saisir "Taille" nombres "
+
+Pour ind de 1 a Taille
+    Saisir Tab[ind]
+Suivant ind
+
+Pour ind de 2 a Taille
+    Si Tab [ind] < Tab [pmin]
+        alors
+            pmin <- ind
+    Fin de Si
+    
+    Si Tab [ind] > Tab [pmax]
+        alors 
+            pmax <- ind
+    Fin de Si
+
+Suivant ind
+Afficher ""
+FIn min-max-bonus

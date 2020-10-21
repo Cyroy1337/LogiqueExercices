@@ -32,3 +32,6 @@ Tant que cpt <= long
         final = final (+) mot (+) space
  cpt = cpt + 1
  Fin de tant que 
+ Afficher final
+
+ Fin Exo 6.8
