@@ -1,19 +1,21 @@
-Exo7.7
+Exo7.6
 Declaration variables local
 CONST Taille : N <- 10
 Var Tab : C[Taille]
+Var Tab2 : B[Taille]
+Var Tab3 : C[Taille]
 Var ind : N <- 1
 Var reverse : N <- Taille
 Var cpt : N <- 1
 Fin variables local
 
 
-Pour ind de 1 a Taille-1
-    Pour cpt de ind a Taille
-    Si cpt > ind
-        Tab[ind] <- Tab[ind]+Tab[cpt]
+Pour ind de 1 a Taille
+    
+    Si Non Tab2[ind]
+        Alors 
+        Tab3[ind]= Tab[ind]*-1
     Fin de si
-    Suivant cpt
 Suivant ind
 
-Fin Exo7.7
+Fin Exo7.6

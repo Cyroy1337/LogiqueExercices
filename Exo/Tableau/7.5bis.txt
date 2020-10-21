@@ -21,7 +21,7 @@ Pour ind de 1 a Taille
         Tab2[reverse] = Tab[ind]
         reverse = reverse - 1
     Sinon
-        Tab[pos] = saisie
+        Tab[pos] = Tab[ind]
         pos = pos + 1 
     Fin de si
 Suivant ind
