@@ -1,0 +1,25 @@
+Debut dichotomique
+
+Debut declaration variables local
+Const Taille : N <- 10
+Var Tab : N [Taille] 
+Var Value : N <- 0
+Var ind : N <- 1
+Var cpt : N <- 1
+Fin declaration variables local
+
+Afficher "Saisir le nombre a recherche"
+Saisie Value
+
+Tant que Tab[ind] =/ Value & ind <= Taille
+
+   ind <- ind +1
+
+fin de tant que
+
+Si ind > Taille
+    Afficher "il n'y a aucun occurence"
+Sinon
+    Afficher "La premiere occurence se trouve a l'indice"ind
+Fin de Si
+Fin de dichotomique

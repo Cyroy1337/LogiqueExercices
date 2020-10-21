@@ -1,0 +1,28 @@
+Exo9.1
+Declaration variables local
+CONST ligne : N <- 4
+CONST colonne : N <- 4
+Var Tab : N [colonne][ligne]
+Var ind : N <- 1
+Var reverse : N <- Taille
+Var pos : N <- 1
+Var taille : N <- 0
+Fin variables local
+
+
+
+
+Pour ind de 1 a colonne
+    Pour pos de 1 a ligne
+        Si ind = pos
+            Alors 
+            Tab[ind][pos] <- 1
+        Fin de Si
+        Si ind+pos = ind+1
+            Alors
+            Tab[ind][pos] <- 2
+        Fin de Si
+    Suivant pos
+Suivant ind
+
+Fin Exo9.1
