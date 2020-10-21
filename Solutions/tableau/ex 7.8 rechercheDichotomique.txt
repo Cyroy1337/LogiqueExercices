@@ -1,0 +1,41 @@
+Debut rechercheDichotomique
+   déclaration des variables locales
+      const TAILLE :N <- 1000
+      var tab :N[TAILLE]
+      var deb : N <- 1
+      var fin :N <- TAILLE
+      var milieu :N <- 0
+   fin déclaration
+   
+   deb -> 1
+   fin -> TAILLE
+   tantque deb < fin
+      milieu <- (deb + fin) DIV 2
+      si val > tab[milieu] 
+         alors
+            deb <- milieu + 1
+         sinon
+            fin <- milieu
+      finsi
+   fin tantque
+
+   si val = tab[deb]
+      alors afficher "la valeur ", val, " est à la position: ", deb
+      sinon afficher "la valeur ", val, " n'est pas dans le tableau"
+   finsi
+
+fin rechercheDichotomique
+
+
+
+
+1000
+500
+250
+125
+63
+32
+16
+8
+4
+2
