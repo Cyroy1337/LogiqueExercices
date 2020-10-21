@@ -1,0 +1,26 @@
+Exo8.4
+Declaration variables local
+CONST Taille : N <- 100
+Var Tab : C[Taille]
+Var ind : N <- 1
+Var reverse : N <- Taille
+Var cpt : N <- 1
+Var inc : N <- 1
+Var premier : B <- Vrai
+Fin variables local
+
+Pour ind de 2 a Taille
+        premier <- Vrai
+        Pour cpt de 2 a ind-1
+            Si Tab[ind] /Div/ Tab[cpt] = 0
+                Alors
+                premier <- Faux
+            Fin de Si
+        Suivant cpt
+    Si premier = Vrai
+        Alors 
+        Afficher Tab[ind] " est un nombre premier "
+    Fin de Si
+Suivant ind
+
+Fin Exo8.4
