@@ -14,7 +14,9 @@ Pour ind de 1 a Taille
     
     Si Non Tab2[ind]
         Alors 
-        Tab3[ind]= Tab[ind]*-1
+        Tab3[ind]=-Tab[ind]
+    Sinon 
+        Tab3[ind]=Tab[ind]
     Fin de si
 Suivant ind
 

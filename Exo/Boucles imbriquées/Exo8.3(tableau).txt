@@ -18,7 +18,7 @@ Pour ind de 2 a Taille
         Suivant cpt
     Si premier = Tab[ind]
         Alors 
-        Afficher Tab[ind] " est un nombre premier "
+        Afficher Tab[ind] " est un nombre parfait "
     Fin de Si
 Suivant ind
 

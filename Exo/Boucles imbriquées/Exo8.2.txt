@@ -1,17 +1,15 @@
 Exo8.2
 Declaration variables local
-CONST Taille : N <- 10
-Var Tab : C[Taille]
-Var ind : N <- 1
-Var reverse : N <- Taille
-Var cpt : N <- 1
-Var inc : N <- 1
+CONST Taille : N <- 9
+Var ind : N <- 0
+Var cpt : N <- 0
+Var inc : N <- 0
 Fin variables local
 
-Pour ind de 1 a Taille
-    Pour cpt de 1 a Taille
-        Pour inc de 1 a Taille
-        Afficher Tab[ind]Tab[cpt]Tab[inc]
+Pour ind de 0 a Taille
+    Pour cpt de 0 a Taille
+        Pour inc de 0 a Taille
+        Afficher ind cpt inc 
         Suivant inc
     Suivant cpt
 Suivant ind 

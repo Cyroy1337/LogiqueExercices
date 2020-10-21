@@ -1,19 +1,15 @@
 Exo8.1
 Declaration variables local
 CONST Taille : N <- 10
-Var Tab : C[Taille]
 Var ind : N <- 1
 Var reverse : N <- Taille
 Var cpt : N <- 1
 Fin variables local
 
-Pour ind de 1 a Taille
-    Assignation valeur tableau
-Suivant ind
 
 Pour ind de 1 a Taille
     Pour cpt de 1 a Taille
-    Afficher Tab[ind]"x"Tab[cpt]"="Tab[ind]*Tab[cpt]
+    Afficher ind"x"cpt"="ind*cpt
     Suivant cpt
 Suivant ind
 Fin Exo8.1
