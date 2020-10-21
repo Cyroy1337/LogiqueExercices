@@ -1,25 +1,29 @@
-7.5
+7.5bis
 Declaration variables local
 CONST Taille : N <- 20
 Var Tab:C[Taille]
+Var Tab2:C[Taille]
 Var ind:N <- 1
-Var saisie:C <- ''
+Var provi:C <- ''
 Var reverse:N <- Taille
 Var pos : N <- 1
 
 Fin variables local
 
 Pour ind de 1 a Taille
-    Saisir saisie
-    Si saisie = ' '
+    Saisir Tab[ind]
+Suivant ind
+
+
+Pour ind de 1 a Taille
+    Si Tab[ind] = ' '
         Alors 
-        Tab[reverse] = saisie
+        Tab2[reverse] = Tab[ind]
         reverse = reverse - 1
     Sinon
         Tab[pos] = saisie
         pos = pos + 1 
     Fin de si
-
 Suivant ind
 
-Fin 7.5
+Fin 7.5bis
