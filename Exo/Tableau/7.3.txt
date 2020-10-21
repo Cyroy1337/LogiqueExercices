@@ -1,0 +1,17 @@
+7.3
+Declaration variables local
+CONST Taille : N <- 16
+Var Tab:N[Taille]
+Var ind:N <- 1
+Var min:N <- 0
+Var max:N <- 0
+Var pmax:N <- 1
+Var pmin:N <- 1
+Fin variables local
+
+Tab[1] <- 1
+Pour ind de 2 a Taille
+    Tab[ind] = Tab[ind-1] * 2
+Suivant ind
+
+Fin 7.3
