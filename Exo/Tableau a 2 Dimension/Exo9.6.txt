@@ -1,0 +1,15 @@
+Exo9.6
+Declaration variables local
+CONST ligne : N <- 4
+CONST colonne : N <- 4
+Var Tab2d : N [ligne,colonne]
+Var ind : N <- 1
+Var reverse : N <- Taille
+Var taille : N <- ligne*colonne
+Var Tab : N <- [taille]
+Var cpt : N <- 0
+Var inc : N <- 1
+Fin variables local
+
+
+Fin Exo9.6
