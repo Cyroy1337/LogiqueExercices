@@ -1,0 +1,21 @@
+Exo9.2
+Declaration variables local
+CONST ligne : N <- 4
+CONST colonne : N <- 4
+Var Tab2d : N [ligne,colonne]
+Var ind : N <- 1
+Var reverse : N <- Taille
+Var taille : N <- ligne*colonne
+Var Tab : N <- [taille]
+Var cpt : N <- 0
+Var inc : N <- 0
+Fin variables local
+
+Pour ind de 1 a colonne
+    Pour cpt de 1 a ligne
+    inc <- inc + 1
+    Tab[inc] <- Tab2d[ind,cpt]
+    Suivant cpt
+suivant ind 
+
+Fin Exo9.2

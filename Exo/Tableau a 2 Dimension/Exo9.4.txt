@@ -1,0 +1,44 @@
+Exo9.4
+Declaration variables local
+CONST ligne : N <- 4
+CONST colonne : N <- 4
+Var Tab2d : N [ligne,colonne]
+Var ind : N <- 1
+Var reverse : N <- Taille
+Var cpt : N <- 1
+Var inc : N <- 0
+Var min : N <- 0
+Var max : N <- 0
+Var somme : N <- 0
+Var somme2 : N <- 0
+Var sommediag : N <- 0
+Var sommediag2 : N <- 0
+
+Var magic : B <- true
+
+Fin variables local
+
+Tant que magic & cpt <= ligne
+        Pour ind de 1 a ligne
+            somme <- Tab2d [ind,cpt]
+            somme2 <- Tab2d[cpt,ind]
+        Suivant ind
+        Si somme =/ somme2
+            magic <- false
+        Fin de si
+        Si cpt + (ligne+1-cpt) =  ligne+1
+        Alors
+        somme3 = somme3 + Tab2d[cpt,ligne+1-cpt]
+        Fin de si
+        somme4 = somme4 + Tab2d[cpt,cpt]
+    cpt = cpt + 1
+Fin de tant que
+    Si somme3 /= somme2 | somme/= somme4
+        magic <- false
+    Fin de Si
+Si magic
+    alors 
+    Afficher "Ceci est un carré parfait et la somme est de" somme
+Sinon 
+    Afficher "Ceci n'est pas un carré parfait"
+Fin de si

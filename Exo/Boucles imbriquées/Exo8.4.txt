@@ -12,15 +12,16 @@ Fin variables local
 Pour ind de 2 a Taille
         premier <- Vrai
         Pour cpt de 2 a ind-1
-            Si Tab[ind] /Div/ Tab[cpt] = 0
+            Si ind /Div/ cpt = 0
                 Alors
                 premier <- Faux
             Fin de Si
         Suivant cpt
     Si premier = Vrai
         Alors 
-        Afficher Tab[ind] " est un nombre premier "
+        Afficher ind " est un nombre premier "
     Fin de Si
+    
 Suivant ind
 
 Fin Exo8.4

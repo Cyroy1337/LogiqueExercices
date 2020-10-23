@@ -5,22 +5,23 @@ Var Tab : C[Taille]
 Var ind : N <- 1
 Var reverse : N <- Taille
 Var cpt : N <- 1
-Var inc : N <- 1
 Var premier : N <- 0
 Fin variables local
-
+pour ind de 2 a Taille 
 
 Fin Exo8.3
 
 Pour ind de 2 a Taille
         Pour cpt de 1 a ind-1
-            Si Tab[ind] /Div/ Tab[cpt] = 0
+            Si ind /Div/ cpt = 0
                 Alors
-                premier <- premier + Tab[cpt]
+                premier <- premier + cpt
             Fin de Si
         Suivant cpt
-    Si premier = Tab[ind]
-        Alors 
-        Afficher Tab[ind] " est un nombre parfait "
-    Fin de Si
+        Si premier = ind
+            Alors 
+            Afficher ind " est un nombre parfait "
+        Fin de Si
+        premier = 0
 Suivant ind
+
