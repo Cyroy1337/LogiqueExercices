@@ -8,13 +8,13 @@ Var reverse : N <- Taille
 Var taille : N <- ligne*colonne
 Var Tab : N <- [taille]
 Var cpt : N <- 0
-Var inc : N <- 0
+Var inc : N <- 1
 Fin variables local
 
 Pour ind de 1 a colonne
     Pour cpt de 1 a ligne
-    inc <- inc + 1
     Tab[inc] <- Tab2d[ind,cpt]
+    inc <- inc + 1
     Suivant cpt
 suivant ind 
 

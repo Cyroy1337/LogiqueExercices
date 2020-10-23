@@ -1,18 +1,18 @@
 Exo8.3
 Declaration variables local
 CONST Taille : N <- 100
-Var Tab : C[Taille]
+Var Tab : N[Taille]
 Var ind : N <- 1
-Var reverse : N <- Taille
 Var cpt : N <- 1
 Var premier : N <- 0
 Fin variables local
 pour ind de 2 a Taille 
 
-Fin Exo8.3
+
 
 Pour ind de 2 a Taille
-        Pour cpt de 1 a ind-1
+        premier = 0  
+        Pour cpt de 1 a ind/2
             Si ind /Div/ cpt = 0
                 Alors
                 premier <- premier + cpt

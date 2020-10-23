@@ -13,25 +13,7 @@ Fin variables local
 
 
 Pour ind de 1 a ligne
-    Pour pos de 1 a colonne
-        Si ind = pos
-            Alors 
-            Tab[ind][pos] <- 1
-        Fin de Si
-        Si ind+pos = ligne+1
-            Alors
-            Tab[ind][pos] <- 2
-        Fin de Si
-    Suivant pos
-Suivant ind
-
-// Short
-
-Pour ind de 1 a ligne
-        Si ind + (ligne+1-ind) =  ligne+1
-            Alors 
-            Tab[ind,ligne+1-ind] <- 2
-        Fin de si
+    Tab[ind,ligne+1-ind] <- 2
     Tab[ind,ind]<- 1
 Suivant ind
 

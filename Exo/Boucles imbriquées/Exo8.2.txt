@@ -9,7 +9,7 @@ Fin variables local
 Pour ind de 0 a Taille
     Pour cpt de 0 a Taille
         Pour inc de 0 a Taille
-        Afficher ind cpt inc 
+        Afficher ind,cpt,inc 
         Suivant inc
     Suivant cpt
 Suivant ind 

@@ -4,27 +4,24 @@ CONST ligne : N <- 4
 CONST colonne : N <- 4
 Var Tab2d : N [ligne,colonne]
 Var ind : N <- 1
-Var reverse : N <- Taille
 Var cpt : N <- 0
-Var inc : N <- 0
 Var min : N <- 0
 Var max : N <- 0
-Var moy : N <- 0
+Var somme : N <- 0
 Fin variables local
 
 Pour ind de 1 a ligne
-    min = 0
-    max = 0
-    moy = 0
-    Pour cpt de 1 a colonne
-        Si Tab2d[ind,cpt]>= max
+    min = Tab2[ind,1]
+    max = Tab2[ind,1]
+    somme = Tab2[ind,1]
+    Pour cpt de 2 a colonne
+        Si Tab2d[ind,cpt]> max
             Alors 
             max <- Tab2d[ind,cpt]
-        Sinon
+        Si Tab2d[ind,cpt]< min
             min <- Tab2d[ind,cpt]
         Fin de si
-        
-        moy = moy +Tab2d[ind,cpt]
+            somme = somme +Tab2d[ind,cpt]
     Suivant cpt
     Afficher "La moyenne est de" moy / col " le min est de " min " le max est de " max
 suivant ind 

@@ -17,7 +17,7 @@ Pour ind de 2 a Taille
                 premier <- Faux
             Fin de Si
         Suivant cpt
-    Si premier = Vrai
+    Si premier
         Alors 
         Afficher ind " est un nombre premier "
     Fin de Si

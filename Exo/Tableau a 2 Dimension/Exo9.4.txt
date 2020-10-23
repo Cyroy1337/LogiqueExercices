@@ -4,38 +4,38 @@ CONST ligne : N <- 4
 CONST colonne : N <- 4
 Var Tab2d : N [ligne,colonne]
 Var ind : N <- 1
-Var reverse : N <- Taille
 Var cpt : N <- 1
 Var inc : N <- 0
-Var min : N <- 0
-Var max : N <- 0
 Var somme : N <- 0
 Var somme2 : N <- 0
-Var sommediag : N <- 0
-Var sommediag2 : N <- 0
-
+Var somme3 : N <- 0
+Var somme4 : N <- 0
 Var magic : B <- true
 
 Fin variables local
 
+pour inc de 1 a ligne
+        somme3 = somme3 + Tab2d[cpt,ligne+1-cpt]
+        somme4 = somme4 + Tab2d[cpt,cpt]
+Suivant inc
+Si somme3 /= somme4
+    alors 
+    magic <- false
+Fin de si
+
 Tant que magic & cpt <= ligne
+        somme = 0
+        somme2 = 0
         Pour ind de 1 a ligne
-            somme <- Tab2d [ind,cpt]
-            somme2 <- Tab2d[cpt,ind]
+            somme = somme+Tab2d [ind,cpt]
+            somme2 = somme2+Tab2d[cpt,ind]
         Suivant ind
-        Si somme =/ somme2
+        Si somme =/ somme3 ou somme2 =/ somme3 
             magic <- false
         Fin de si
-        Si cpt + (ligne+1-cpt) =  ligne+1
-        Alors
-        somme3 = somme3 + Tab2d[cpt,ligne+1-cpt]
-        Fin de si
-        somme4 = somme4 + Tab2d[cpt,cpt]
     cpt = cpt + 1
 Fin de tant que
-    Si somme3 /= somme2 | somme/= somme4
-        magic <- false
-    Fin de Si
+
 Si magic
     alors 
     Afficher "Ceci est un carré parfait et la somme est de" somme
