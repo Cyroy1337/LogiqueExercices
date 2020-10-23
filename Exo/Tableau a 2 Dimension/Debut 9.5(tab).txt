@@ -1,0 +1,25 @@
+Debut 9.5
+
+Debut declaration variables local
+
+CONST ligne : N <- 3
+CONST col : N <- 3
+Var Tab2d : C[ligne,col]
+Var ind : N <- 0
+Var cpt : N <- 0
+Var inc : N <- ligne + 1
+Var provi : C <-''
+Var Tab2d2 : C[ligne,col]
+Fin declaration variables local
+
+
+Pour ind de 1 a col
+    inc = inc -1
+    Pour cpt de 1 a ligne
+    Tab2d2[cpt,inc]<- Tab2d[ind,cpt]
+    Suivant cpt
+Suivant ind
+
+
+   
+
